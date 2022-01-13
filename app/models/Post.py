@@ -15,3 +15,5 @@ class Post(Base):
 
 
 user = relationship('User')
+
+comments = relationship('Comment', cascade='all,delete')
